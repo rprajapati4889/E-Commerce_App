@@ -14,7 +14,7 @@ jobs:
     steps:
       - checkout
       - run: npm ci
-          name: "Say Hello!!!"
+          name: Say Hello!!!
           command: |
             echo 'export COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")' >> $BASH_ENV
             source $BASH_ENV
